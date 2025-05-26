@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Computacional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Visão Computacional</h1>
+        <h3>Conceitos Teoricos Essenciais</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="caminhos/Fundamentos_imagens_digitais.html" target="_blank"><p>Fundamentos de Imagens Digitais</p></a>
+            
+            <a href="" target="_blank"><p>Processamento de Imagens</p></a>
+
+            <a href="" target="_blank"><p>Segmentação de Imagens</p></a>
+            
+            <a href="" target="_blank"><p>Transformações Geométricas</p></a>
+
+            <a href="" target="_blank"><p>Morfologia Matemática</p></a>
+
+            <a href="" target="_blank"><p>Detecção de Características</p></a>
+
+            <a href="" target="_blank"><p>Estimativa de Movimento</p></a>
+
+            <a href="" target="_blank"><p>Calibração de Câmera e Visão Estéreo</p></a>
+
+            <a href="" target="_blank"><p>Reconstrução 3D (básico)</p></a>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section id="apresentacao">
+            <p> 
+                Seja bem-vindo! Nesta página, você encontrará tudo o que precisa para entender o fascinante universo da visão computacional. Apresentamos os principais conceitos, técnicas e aplicações que vão guiá-lo passo a passo na construção desse conhecimento.
+            </p>
+        </section>
+
+        <section id="conteudos">
+            <h1>1. Fundamentos de Imagens Digitais</h1>
+            <p>
+                 Neste tópico você aprenderá o que é uma imagem digital do ponto de vista computacional: como ela é armazenada, lida e representada por uma máquina. Isso inclui o entendimento de pixels (os menores elementos de uma imagem), resolução (quantidade de pixels na imagem), profundidade de cor (quantos bits cada pixel usa para representar cores), e os diferentes modelos de representação de cor, como RGB, HSV e YCrCb. Será abordada também a diferença entre imagens em escala de cinza, binárias e coloridas, além do conceito de histogramas — que mostram a distribuição dos tons em uma imagem.
+            </p>
+
+            <h1>2. Processamento de Imagens</h1>
+            <p>
+                 Este tópico foca nas operações básicas feitas sobre imagens com o objetivo de prepará-las para análises posteriores. Você estudará o conceito de convolução, que é o fundamento para aplicar filtros em imagens. Isso inclui filtros de suavização (para reduzir ruídos) e filtros de realce (para evidenciar detalhes como contornos e texturas). Também serão vistos conceitos como gradientes (diferença de intensidade entre pixels), operadores clássicos (como Sobel e Laplace), e como essas ferramentas ajudam a extrair informações visuais úteis.
+            </p>
+
+            <h1>3. Transformações Geométricas</h1>
+            <p>
+                 Aqui você entenderá como modificar a posição e a forma de uma imagem no espaço. Isso inclui operações como translação (deslocamento da imagem), rotação (giro em torno de um ponto), e escala (aumento ou redução do tamanho). Também são estudadas transformações mais avançadas, como as afins e projetivas (homografias), que simulam mudanças de perspectiva — por exemplo, quando uma imagem é vista de um ângulo diferente. Além da explicação matemática dessas transformações, você verá como elas afetam a percepção dos objetos na imagem.
+            </p>
+
+            <h1>4. Segmentação de Imagens</h1>
+            <p>
+                 Segmentar uma imagem significa separar diferentes partes dela com base em critérios como cor, brilho ou textura. Neste tópico, você estudará os principais métodos para isso, como a limiarização (que divide a imagem em áreas claras e escuras com base em um valor), a segmentação baseada em regiões (que agrupa pixels semelhantes), e a segmentação baseada em contornos (que localiza as bordas entre objetos). O objetivo é isolar regiões de interesse para que possam ser analisadas de forma individual, como por exemplo, identificar um objeto específico em uma cena. 
+            </p>
+
+            <h1>5. Morfologia Matemática</h1>
+            <p>
+                 Este é um tópico focado em imagens binárias (preto e branco) e usa operações inspiradas na teoria dos conjuntos para modificar a forma dos objetos na imagem. Você estudará operações como erosão (que reduz áreas brancas), dilatação (que expande essas áreas), além de composições como abertura e fechamento, que servem para limpar ruídos ou preencher buracos. Essas técnicas são muito úteis, por exemplo, para separar objetos que estão colados ou para eliminar detalhes irrelevantes antes de uma análise.
+            </p>
+
+            <h1>6. Detecção de Características</h1>
+            <p>
+                 A detecção de características busca identificar pontos importantes ou únicos em uma imagem, como cantos, cruzamentos ou padrões visuais distintos. Neste tópico, você verá o que são pontos de interesse, por que são importantes e como podem ser descritos numericamente por meio de descritores. Esses descritores servem como "impressões digitais" de regiões da imagem, permitindo comparações entre imagens diferentes. Também se aborda como esses pontos e descritores são usados para encontrar correspondências entre duas ou mais imagens, o que é essencial para tarefas como reconstrução ou alinhamento de imagens.
+            </p>
+
+            <h1>7. Estimativa de Movimento</h1>
+            <p>
+                 Neste tópico você aprenderá como é possível analisar uma sequência de imagens (como um vídeo) para identificar o movimento de objetos ou da própria câmera. Um conceito fundamental aqui é o fluxo óptico, que representa o deslocamento aparente dos pixels entre quadros consecutivos. Outro método importante é a subtração de fundo, onde se tenta isolar o que está se movendo ao comparar uma imagem atual com uma de referência (fundo). Esses conceitos são muito usados em vigilância, rastreamento de objetos e navegação robótica.
+            </p>
+
+            <h1>8. Calibração de Câmera e Visão Estéreo</h1>
+            <p>
+                 A visão computacional precisa entender como uma câmera “vê” o mundo. Aqui você estudará o modelo pinhole, que é uma simplificação do funcionamento da câmera, e como obter os parâmetros intrínsecos (como distância focal, centro óptico) e extrínsecos (posição e orientação da câmera no espaço). Com isso, é possível interpretar corretamente onde os objetos estão no mundo real. Além disso, será abordado como usar duas câmeras (visão estéreo) para calcular profundidade a partir da diferença de posição de um ponto visto por ambas as câmeras — um conceito chamado disparidade.
+            </p>
+
+            <h1>9. Reconstrução 3D (básico)</h1>
+            <p>
+                 Com base na visão estéreo e nos parâmetros das câmeras, é possível reconstruir a posição tridimensional de pontos da cena. Você aprenderá o que é triangulação (método geométrico para obter a posição 3D de um ponto a partir de duas visões diferentes) e como se gera uma nuvem de pontos — um conjunto de coordenadas tridimensionais que representam a forma dos objetos. Essa reconstrução é o passo inicial para criar modelos 3D de ambientes reais usando apenas imagens.
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Site desenvolvindo por Bernardo Leinig C. Boiteux</p>
+    </footer>
+
+    
+</body>
+</html>
