@@ -14,6 +14,12 @@
 *{
     padding: 0;
     margin: 0;
+    /*outline: 1px solid red;*/
+}
+
+body{
+    width: 100%;
+    background-color: var(--color2);
 }
 
 header{
@@ -39,7 +45,9 @@ nav ul{
 }
 
 nav p{
-    padding: 0px 20px;
+    padding: 10px 15px;
+    text-align:center;
+
 }
 
 nav p:hover{
@@ -47,44 +55,58 @@ nav p:hover{
 }
 
 nav{
+    overflow: auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.965);
     padding: 10px;
     height: 60px;
+    box-shadow: 0px 0px 0px black;
 }
 
 nav p{
     color: white;
 }
 
+
 main{
     font-family: var(--font-family);
-    background-color: var(--color2);
-    width: 1000px;
+    width: 70%;
     margin: auto;
-    padding: 20px;
-    border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 12px black;
 }
 
 #apresentacao{
+    font-size: 20px;
     text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    margin-bottom: 50px;
-    font-weight: bolder;
-
 }
 
-#conteudos p{
-    padding: 10px 30px 30px 30px;
+.conteudo{
+    box-shadow: 0px 0px 4px black;
+    padding: 10px ;
+    margin-top: 20px;
+}
+
+.conteudo > p{
+    padding: 20px;
+    font-size: 17px;
     text-align: justify;
 }
-#conteudos h1{
-    text-align: center;
+
+main ul, li{
+    list-style-position: inside;
+    padding: 5px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 footer{
